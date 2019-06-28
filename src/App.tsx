@@ -1,33 +1,16 @@
-import * as React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import * as React from 'react';
+import { View } from 'react-native';
+
+import { ConfigurationScreen } from './screens/Configuration/Configuration';
 
 interface IAppProps { }
 
 export default class App extends React.Component<IAppProps> {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to LulIot!</Text>
-      </View>
-    );
-  }
+    render() {
+        return (
+            <View>
+                <ConfigurationScreen />
+            </View>
+        );
+    }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#F5FCFF",
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: "center",
-    margin: 10,
-  },
-  instructions: {
-    textAlign: "center",
-    color: "#333333",
-    marginBottom: 5,
-  },
-});

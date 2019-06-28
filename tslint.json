@@ -1,27 +1,167 @@
 {
-    "defaultSeverity": "error",
     "extends": [
-        "tslint:recommended"
+        "tslint:recommended",
+        "tslint-react"
     ],
-    "jsRules": {},
     "rules": {
-        "arrow-parens": true,
-        "jsdoc-format": false,
-        "max-line-length": false,
-        "max-classes-per-file": false,
-        "member-access": false,
+        "align": [
+            true,
+            "parameters",
+            "statements"
+        ],
+        "arrow-return-shorthand": true,
+        "ban-types": [
+            true,
+            [
+                "Object",
+                "Avoid using the `Object` type. Did you mean `object`?"
+            ],
+            [
+                "Boolean",
+                "Avoid using the `Boolean` type. Did you mean `boolean`?"
+            ],
+            [
+                "Number",
+                "Avoid using the `Number` type. Did you mean `number`?"
+            ],
+            [
+                "String",
+                "Avoid using the `String` type. Did you mean `string`?"
+            ],
+            [
+                "Symbol",
+                "Avoid using the `Symbol` type. Did you mean `symbol`?"
+            ]
+        ],
+        "function-name": [
+            true,
+            {
+                "method-regex": "^[a-z_A-Z\\[][\\w\\d\\._\\]]+$",
+                "private-method-regex": "^[a-z][\\w\\d]+$",
+                "protected-method-regex": "^[a-z][\\w\\d]+$",
+                "static-method-regex": "^[A-Za-z_\\d]+$",
+                "function-regex": "^[a-zA-Z][\\w\\d]+$"
+            }
+        ],
+        "import-name": false,
+        "import-spacing": false,
+        "indent": [
+            true,
+            "spaces",
+            4
+        ],
+        "jsx-boolean-value": [
+            true,
+            "never"
+        ],
+        "jsx-key": true,
+        "jsx-no-bind": true,
+        "jsx-no-lambda": true,
+        "jsx-no-multiline-js": false,
+        "jsx-no-string-ref": true,
+        "jsx-self-close": true,
+        "jsx-space-before-trailing-slash": true,
+        "jsx-wrap-multiline": false,
+        "lines-between-class-members": true,
+        "max-line-length": [
+            false
+        ],
+        "member-access": [
+            true,
+            "no-public"
+        ],
         "member-ordering": false,
+        "no-boolean-literal-compare": false,
+        "no-consecutive-blank-lines": [
+            true,
+            4
+        ],
         "no-console": false,
-        "no-debugger": false,
+        "no-empty": [
+            true,
+            "allow-empty-functions"
+        ],
         "no-empty-interface": false,
-        "no-namespace": false,
-        "no-shadowed-variable": false,
-        "no-unused-expression": false,
-        "no-string-literal": false,
+        "no-import-side-effect": [
+            true
+        ],
+        "no-invalid-this": [
+            true,
+            "check-function-in-method"
+        ],
+        "no-this-assignment": [
+            true,
+            {
+                "allowed-names": [
+                    "^self$"
+                ],
+                "allow-destructuring": true
+            }
+        ],
+        "no-trailing-whitespace": true,
+        "no-var-requires": false,
+        "object-curly-spacing": [
+            false,
+            "never"
+        ],
         "object-literal-sort-keys": false,
+        "object-shorthand-properties-first": false,
+        "one-variable-per-declaration": [
+            true,
+            "ignore-for-loop"
+        ],
+        "only-arrow-functions": [
+            true,
+            "allow-declarations"
+        ],
         "ordered-imports": false,
-        "quotemark": true,
-        "trailing-comma": false
-    },
-    "rulesDirectory": []
+        "prefer-array-literal": false,
+        "prefer-template": true,
+        "quotemark": [
+            true,
+            "single",
+            "jsx-double"
+        ],
+        "semicolon": [
+            true,
+            "always",
+            "ignore-bound-class-methods"
+        ],
+        "ter-arrow-parens": [
+            false
+        ],
+        "trailing-comma": [
+            true,
+            {
+                "singleline": "never",
+                "multiline": {
+                    "objects": "always",
+                    "arrays": "always",
+                    "functions": "ignore",
+                    "typeLiterals": "ignore"
+                },
+                "esSpecCompliant": true
+            }
+        ],
+        "triple-equals": true,
+        "type-literal-delimiter": false,
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "check-format",
+            "allow-leading-underscore",
+            "allow-pascal-case"
+        ],
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-rest-spread",
+            "check-type",
+            "check-typecast",
+            "check-type-operator",
+            "check-preblock"
+        ]
+    }
 }
