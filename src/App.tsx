@@ -1,5 +1,8 @@
 import * as React from 'react';
-import { View } from 'react-native';
+
+import { mapping } from '@eva-design/eva';
+import { ApplicationProvider, Layout } from 'react-native-ui-kitten';
+import { theme } from './config/theme';
 
 import { ConfigurationScreen } from './screens/Configuration/Configuration';
 
@@ -8,9 +11,12 @@ interface IAppProps { }
 export default class App extends React.Component<IAppProps> {
     render() {
         return (
-            <View>
+            <ApplicationProvider
+                mapping={mapping}
+                theme={theme}
+            >
                 <ConfigurationScreen />
-            </View>
+            </ApplicationProvider>
         );
     }
 }

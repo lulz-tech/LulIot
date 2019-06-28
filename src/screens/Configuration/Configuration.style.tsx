@@ -1,29 +1,28 @@
 import { StyleSheet } from 'react-native';
 
-import { ThemeConfig } from '../../config/theme';
 
 export const configurationScreenStyle = StyleSheet.create({
     container: {
-        justifyContent: 'space-between',
+        flex: 1,
+        padding: 16,
         alignItems: 'center',
     },
     title: {
-        marginTop: 32,
+        marginTop: 64,
         textAlign: 'center',
-        fontSize: 16,
+    },
+    subtitle: {
+        marginTop: 8,
+        textAlign: 'center',
     },
     enterContainer: {
         height: 120,
         alignItems: 'center',
         justifyContent: 'center',
+        marginTop: 16,
+        marginBottom: 16,
     },
     button: {
         marginTop: 16,
-    },
-    input: {
-        borderColor: ThemeConfig.colors.secondaryColor,
-        width: '100%',
-        borderWidth: 1,
-        padding: 16,
     },
 });

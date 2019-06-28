@@ -2,9 +2,8 @@ import * as React from 'react';
 
 import Axios from 'axios';
 
-import { View, Text, TextInput, SafeAreaView } from 'react-native';
-
-import { Button } from '../../components/shared/button/Button';
+import { View } from 'react-native';
+import { Text, Layout, Input, Button } from 'react-native-ui-kitten';
 
 import { configurationScreenStyle } from './Configuration.style';
 
@@ -37,23 +36,24 @@ export class ConfigurationScreen extends React.Component<IConfigurationScreenPro
     render() {
         const { ip } = this.state;
         return (
-            <SafeAreaView style={configurationScreenStyle.container}>
-                <Text style={configurationScreenStyle.title}>Sup boi, enter LulIot device IP, pliz</Text>
+            <Layout style={configurationScreenStyle.container}>
+                <Text category={'h1'} style={configurationScreenStyle.title}>Sup boi!</Text>
+                <Text category={'h4'} style={configurationScreenStyle.subtitle}>Enter Lul-IoT device IP, pliz</Text>
 
                 <View style={configurationScreenStyle.enterContainer}>
-                    <TextInput
+                    <Input
                         value={ip}
                         placeholder={'Enter device IP'}
                         onChangeText={this.onIpChange}
-                        style={configurationScreenStyle.input}
                     />
                     <Button
-                        title={'So, let\'s search this ip'}
                         style={configurationScreenStyle.button}
                         onPress={this.onSearchPress}
-                    />
+                    >
+                        So, let's search this ip
+                    </Button>
                 </View>
-            </SafeAreaView>
+            </Layout>
         );
     }
 }

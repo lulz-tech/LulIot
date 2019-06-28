@@ -1,7 +1,5 @@
-export const ThemeConfig = {
-    colors: {
-        main: '#95adbe',
-        secondaryColor: '#574f7d',
-        lightGreen: '#dff0ea',
-    },
+import { dark as darkTheme } from '@eva-design/eva';
+
+export const theme = {
+    ...darkTheme,
 };
