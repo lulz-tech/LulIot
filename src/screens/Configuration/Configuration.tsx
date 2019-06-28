@@ -15,7 +15,7 @@ interface IConfigurationScreenState {
 
 export class ConfigurationScreen extends React.Component<IConfigurationScreenProps, IConfigurationScreenState> {
     state: IConfigurationScreenState = {
-        ip: '',
+        ip: 'http://',
     };
 
     private onIpChange = (ip: string) => this.setState({ ip });

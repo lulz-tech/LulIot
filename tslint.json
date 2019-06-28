@@ -33,16 +33,6 @@
                 "Avoid using the `Symbol` type. Did you mean `symbol`?"
             ]
         ],
-        "function-name": [
-            true,
-            {
-                "method-regex": "^[a-z_A-Z\\[][\\w\\d\\._\\]]+$",
-                "private-method-regex": "^[a-z][\\w\\d]+$",
-                "protected-method-regex": "^[a-z][\\w\\d]+$",
-                "static-method-regex": "^[A-Za-z_\\d]+$",
-                "function-regex": "^[a-zA-Z][\\w\\d]+$"
-            }
-        ],
         "import-name": false,
         "import-spacing": false,
         "indent": [
@@ -62,7 +52,6 @@
         "jsx-self-close": true,
         "jsx-space-before-trailing-slash": true,
         "jsx-wrap-multiline": false,
-        "lines-between-class-members": true,
         "max-line-length": [
             false
         ],
