@@ -2,6 +2,14 @@
 
 Application for LulzTech's IoT project
 
+## Screenshots
+
+<div align="center">
+    <p>Configuration page<p>
+    <img src="./screenshots/config-page.png" alt="drawing" width="300" align="center"/>
+</div>
+
+
 ## Installation
 
 ```bash
