@@ -15,7 +15,7 @@
     "@eva-design/eva": "^1.0.1",
     "axios": "^0.19.0",
     "react": "16.8.3",
-    "react-native": "0.59.9",
+    "react-native": "0.62.3",
     "react-native-ui-kitten": "^4.0.5"
   },
   "devDependencies": {
